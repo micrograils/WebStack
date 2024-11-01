@@ -1,6 +1,11 @@
 <?php
 if ( ! defined( 'ABSPATH' ) ) { exit; }
-date_default_timezone_set('Asia/Shanghai');
+// updated 2024-11-01 ---->
+// See：/wp-admin/site-health.php
+// 站点健康状态 - 关键问题  - PHP 默认时区无效
+// PHP 的默认时区在 WordPress 载入后被 date_default_timezone_set() 函数调用修改，这可能会影响日期和时间的正确计算。
+//date_default_timezone_set('Asia/Shanghai');
+// <---- updated 2024-11-01
 require get_template_directory() . '/inc/inc.php';
 
    
