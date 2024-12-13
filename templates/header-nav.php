@@ -50,7 +50,7 @@ $categories = get_categories( array(
                         'taxonomy'   => 'favorites',
                         'meta_key'   => '_term_order',
                         'orderby'    => 'meta_value_num',
-                        'order'      => 'desc',
+                        'order'      => 'asc',
                         'child_of'   => $category->term_id,
                         'hide_empty' => 0)
                     );
